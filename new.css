@@ -25,23 +25,22 @@ body {
 /* NAV */
 nav {
     
-    border-top: 10px solid #192231;
-    border-bottom: 10px solid #192231;
+    /* border-top: 10px solid #192231; */
+    /* border-bottom: 10px solid #192231; */
     box-sizing: border-box;
     background-color:  #494E6B;
-    height: 400px;
+    height: 0;
     width: 100%;
     margin: 0;
 
 }
-.nav-cover {
-    /* img */
+/* .nav-cover {
     height: 100%;
     background-image: url("img/tribal_tree.png");
     background-size: contain;
     background-repeat: no-repeat;
 
-}
+} */
 .nav-buttons {
     display: flex;
     flex-direction: row;
@@ -69,10 +68,16 @@ a {
 
 main {
     margin: 0;
+    /* background-image: url("img/tom-barrett.jpg");
+    background-size: contain; */
+}
+.wrapper {
+    background-image: url("img/tom-barrett.jpg");
+    background-size: cover;
 }
 h3 {
     margin: 0;
-    padding: 20px 0 0;
+    padding: 20px 0 10px;
     text-align: center;
     letter-spacing: 2px;
     font-weight: 100;
@@ -94,11 +99,17 @@ a:hover {
     border-bottom: 10px solid #192231;
     border-top: 10px solid #192231;
     box-sizing: border-box;
-
     width: 100%;
     margin: 0;
-    padding: 20% 10%;
+    padding: 5% 10%;
 
+    /* background: linear-gradient(rgba(25, 34, 49, .6), rgba(255, 255, 255, .5)); */
+
+}
+.para {
+    background: linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, 1));
+    padding: 2%;
+    box-shadow: 1px 5px 10px;
 }
 .projects {
     border-bottom: 10px solid #192231;
@@ -165,21 +176,22 @@ footer {
     background-color: rgba(255, 255, 255, .6);
     
 }
-.contact-img {
+/* .contact-img {
     background-image: url("img/landscape-frame.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
-}
+} */
 .contact-img a {
     border: 1px solid black;
     background-color: rgba(152, 94, 109, .9);
-    padding: 1%;
+    padding: 2%;
+    margin: 0 20px;
 }
 
     /* bird */
    
-    .bird {
+    /* .bird {
    
         position: relative;
         left: -130px;
@@ -218,7 +230,7 @@ footer {
         80% { transform: translate(1200px, -230px) rotate(10deg);}
         90% { transform: translate(1400px, -250px) rotate(0deg);}
         100% { transform: translate(1500px, -280px) rotate(10deg);}
-    }
+    } */
 
 
 @media screen and (min-width: 600px) {
@@ -243,9 +255,8 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 40%;
+        width: 25%;
         margin: 10% auto;
-
     }
     .project-img img {
         width: 100%; 
@@ -254,15 +265,13 @@ footer {
         box-sizing: border-box;
         object-fit: contain;
         overflow: hidden;
-
         width: 100%;
         margin: 0;
         padding: 0;
-
     }
     .project-desc {
         box-sizing: border-box;
-        height: 200px;
+        min-height: 200px;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -270,15 +279,15 @@ footer {
     }
 
     /* bird */
-    .bird {
+    /* .bird {
         position: relative;
         left: -550px;
         top: 310px;
         height: 75px;
-    }
+    } */
 
-    .contact-img {
+    /* .contact-img {
         background-size: cover;
-    }
+    } */
 
 }
